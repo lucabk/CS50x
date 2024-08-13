@@ -1,0 +1,427 @@
+{% extends "layout.html" %}
+
+{%block head%}
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- emoji -->
+<link href="{{ url_for('static', filename='images/danipt.jpg') }}" rel="icon">
+
+<!-- CSS -->
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+{%endblock%}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block main %}
+<!--video yt-->
+<div class="container-fluid d-flex justify-content-center align-items-center" style="background-color:black">
+    <iframe width="1114" height="714" src="https://www.youtube.com/embed/nEllKjWTP7o?autoplay=1&mute=1" title="DaniPT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="black-line"></div>
+
+  <!--benefici-->
+  <div class="container p-5 mt-5 bg-light text-dark tema">
+    <h2 class="titolo2">What's in it for You?</h2>
+  </div>
+
+  <div class="container p-3 bg-light text-dark tema">
+    <div class="row">
+        <div class="col-sm-4">
+          <ul class="lista">
+            <li>Customized workout plan</li>
+            <li>Dietary advice</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4">
+          <ul class="lista">
+            <li>Regular check-ins</li>
+            <li>Long-Term Progress Planning</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4">
+          <ul class="lista">
+            <li>Psychological Support and Motivation</li>
+            <li>Guaranteed Results</li>
+          </ul>
+        </div>
+    </div>
+  </div>
+
+  <div class="container p-5 mb-5 bg-light text-dark tema">
+    <h2 class="titolo2">Unlock Your Potential with Expert Guidance</h2>
+    <ul class="lista p-3">
+      <li><b>Free Initial Consultation</b></li>
+      <p class="giustifica"> Start your fitness journey with a complimentary consultation session. Let's discuss your goals and create a plan tailored just for you.</p>
+      <li><b>Experience and Certifications</b></li>
+      <p class="giustifica">With over 5 years of hands-on experience in the fitness industry and certified as a Level 3 Personal Trainer by Project Invictus, rest assured you're in good hands.</p>
+    </ul>
+  </div>
+
+  <!--foto bialnciere-->
+  <figure class="figure">
+    <img src="{{ url_for('static', filename='images/barbell2.jpg')}}"  alt="barbell" style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;">
+  </figure>
+
+  <!--prezzi-->
+  <div class="container p-5 mt-3 bg-light text-dark tema">
+    <h2 class="titolo2">Price And Benefits</h2>
+    <div class="row p-3" style="font-size:20px;">
+      <div class="col-sm-4">
+        <div class="p-3 mb-2 bg-danger text-white prezzi">
+          <h3>BASE - Monthly</h3>
+          <ul class="list">
+            <li>Price: <b>€50</b> per month</li>
+            <li> Includes <b>personalized workout</b> plan delivered via email</li>
+            <li><b>WhatsApp </b>support</li>
+            <li>weekly <b>check-ins</b></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4">
+          <div class="p-3 mb-2 bg-warning text-white prezzi">
+            <h3>BASE - 6 Months</h3>
+            <ul class="list">
+              <li>Price: <b>€40</b> per month</li>
+              <li> Includes <b>personalized workout</b> plan delivered via email</li>
+              <li><b>WhatsApp </b>support</li>
+              <li>weekly <b>check-ins</b></li>
+              <li><b>integration</b> plan</li>
+            </ul>
+          </div>
+      </div>
+      <div class="col-sm-4">
+        <div  class="p-3 mb-2 bg-success text-white prezzi">
+              <h3>VIP - 6 Months</h3>
+              <ul class="list">
+                <li>Price: <b>€60</b> per month</li>
+                <li> Includes <b>personalized workout</b> plan delivered via email</li>
+                <li><b>WhatsApp </b>support</li>
+                <li>weekly <b>check-ins</b></li>
+                <li><b>integration</b> plan</li>
+                <li><b>weekly one-to-one sessions</b>*</li>
+              </ul>
+        </div>
+      </div>
+    </div>
+    <p>*only for residents in Milan</p>
+  </div>
+
+  <div class="container p-2 bg-light text-dark center tema mb-5">
+    <div class="alert alert-success">
+      <h5><strong>Join now</strong> and save big! Enjoy a <strong>30% discount</strong> on your first month's subscription - hurry, offer ends soon!</h5>
+    </div>
+  </div>
+
+  <!--tabella orari wazz-->
+  <div class="container p-5 bg-light text-dark center tema">
+    <h2>Availability Timetable for WhatsApp and Online Checks</h2>
+  </div>
+  <div class="table-responsive">
+    <div class="container pb-3  mb-5 bg-light text-dark tema center">
+      <table class="table table-striped border-secondary table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>Timetable</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:00-10:00</td>
+            <td  class="table-warning">by reservation</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>10:00-11:00</td>
+            <td class="table-warning">by reservation</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td  class="table-warning">by reservation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>11:00-12:00</td>
+            <td  class="table-warning">by reservation</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td  class="table-warning">by reservation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>12:00-13:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td  class="table-warning">by reservation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>13:00-14:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>14:00-15:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>15:00-16:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>16:00-17:00</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>17:00-18:00</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>18:00-19:00</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td class="table-success">yes</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!--scheda allenamento sheet-->
+  <div class="container p-5 mt-5 bg-light text-dark center tema">
+    <h3 class="center">Discover the difference a well-structured workout plan can make!
+      <span class="badge bg-primary rounded-pill">New</span>
+    </h3>
+    <h4>
+      <small class="text-muted">Our beginner's program, meticulously built for female athletes starting their journey, is your key to success.</small>
+    </h4>
+    <div class="container bg-light text-dark p-3 tema"></div>
+    <!--bottone per far apparire la scheda-->
+    <button id="bottone_scheda" type="button" class="btn btn-lg btn-outline-primary"><strong>Get Your Free Workout Plan!</strong></button>
+    <div class="container bg-light text-dark p-3 tema"></div>
+    <div id="scheda_allenamento" style="display:none;">
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSgffcdaHY4W1RxHj7MH9sPAaJP_1jc2-FkTdphG4q6ZVFYvuw8C-vWufkauluUIwETOUIS8NtokYlM/pubhtml?gid=1163458248&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="500"></iframe>
+    </div>
+  </div>
+
+
+  <!--card M/F per link a prenotazione-->
+  <div class="container p-3  mt-5 bg-light text-dark center tema">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <div class="card carta" style="width:100%">
+          <img class="card-img-top" src="{{ url_for('static', filename='images/maschioBB.jpg') }}" alt="Male image">
+          <div class="card-body">
+            <h3 class="display-5" class="card-title">Male</h3>
+            <p class="card-text">Unlock your peak performance with our tailored male workout.
+              <br><strong>Start your transformation today!</strong>
+            </p>
+            <a href="/booknow" class="bottone_carta btn btn-lg btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card carta" style="width:100%">
+          <img class="card-img-top" src="{{ url_for('static', filename='images/femminaBB.jpg') }}" alt="Female image">
+          <div class="card-body">
+            <h3 class="display-5" class="card-title">Female</h3>
+            <p class="card-text">Unleash your strength with our personalized female workout plan.
+              <br><strong>Elevate your fitness game now!</strong>
+            </p>
+            <a href="/booknow" class="bottone_carta btn btn-lg btn-outline-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container p-5 bg-light text-dark center tema"></div>
+  <!--il triangolo del successo-->
+  <div class="container p-5 bg-light text-dark center tema">
+    <h2>Maximizing Your Fitness Journey</h2>
+    <h4 small class="text-muted">
+      Unveiling the Power Trio
+    </h4>
+    <div class="container p-2 bg-light text-dark center tema"></div>
+    <!--W3Schools-->
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+            <strong class="card-text">Commitment and Passion</strong>
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+            Dive into your workout program with unwavering dedication and passion. Let every rep, every set, and every sweat droplet bring you closer to your goals.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+           <strong class="card-text">Nourish Your Body</strong>
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Fuel your body with the essential nutrients it craves. Elevate your performance and enhance your results by adopting a balanced and nourishing diet tailored to your fitness goals.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+            <strong class="card-text">Rest and Recovery</strong>
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Embrace the restorative power of rest and recovery. Allow your body the time it needs to heal and rebuild, ensuring you're ready to tackle each workout with renewed vigor.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--barra blu-->
+  <div class="container p-5 bg-light text-dark center tema">
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%"></div>
+    </div>
+  </div>
+
+
+  <!--nav tabs-->
+  <div class="container p-5 bg-light text-dark  tema">
+    <h3 class="center">Fitness Foundations: Free Workout Wisdom</h3>
+    <div class="container p-2 bg-light text-dark center tema"></div>
+    <!--https://getbootstrap.com/docs/4.0/components/navs/#tabs-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#pull-ups">Pull-ups</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#squat">Squat</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" data-bs-toggle="tab" href="#bent-over-row">Bent over row</a>
+      </li>
+    </ul>
+
+    <div class="container p-3 bg-light text-dark  tema"></div>
+    <div class="tab-content">
+      <div class="tab-pane active container" id="pull-ups">
+        <h4 class="center"><strong>PULL-UPS</strong></h4>
+        <ul class="list">
+          <li><strong>Exercise Overview:</strong></li>
+          <p class="giustifica">Pull-ups are a compound upper-body exercise that primarily targets the muscles of the back, including the latissimus dorsi, rhomboids, and trapezius, as well as the biceps and forearms.</p>
+          <li><strong>Execution:</strong></li>
+          <ol class="list">
+            <li>Start by gripping a pull-up bar with your hands slightly wider than shoulder-width apart, palms facing away from you.</li>
+            <li>Hang with your arms fully extended and your core engaged.</li>
+            <li>Pull yourself up by driving your elbows down and back, aiming to bring your chin above the bar.</li>
+            <li>Lower yourself back down to the starting position with control, fully extending your arms.</li>
+          </ol>
+          <br><li><strong>Tips for Proper Form:</strong></li>
+          <ul class="list">
+            <li>Maintain a straight body line throughout the movement, avoiding swinging or kipping.</li>
+            <li>Engage your core muscles to stabilize your body and prevent excessive swinging.</li>
+            <li>Focus on pulling with your back muscles rather than relying solely on your arms.</li>
+            <li>Start with assisted pull-ups or negatives if you're unable to perform full pull-ups initially.</li>
+            <li>Gradually increase the number of repetitions and sets as you build strength.</li>
+          </ul>
+        </ul>
+      </div>
+
+      <div class="tab-pane fade container" id="squat">
+        <h4 class="center"><strong>SQUAT</strong></h4>
+        <ul class="list">
+          <li><strong>Exercise overview</strong></li>
+          <p class="giustifica">Squats are a fundamental lower-body exercise that primarily targets the quadriceps, hamstrings, glutes, and core muscles.</p>
+          <li><strong>Execution:</strong></li>
+          <ol class="list">
+            <li>Begin by standing with your feet shoulder-width apart, toes slightly turned out.</li>
+            <li>Engage your core and maintain a neutral spine as you initiate the movement by bending your hips and knees.</li>
+            <li>Lower your body down by pushing your hips back and bending your knees, keeping your chest up and your weight in your heels.</li>
+            <li>Descend until your thighs are parallel to the ground or slightly below, ensuring your knees track in line with your toes.</li>
+            <li>Drive through your heels to return to the starting position, fully extending your hips and knees</li>
+          </ol>
+          <br><li><strong>Tips for Proper Form:</strong></li>
+          <ul class="list">
+            <li>Keep your chest up and your back flat throughout the movement to maintain a neutral spine.</li>
+            <li>Avoid allowing your knees to collapse inward; instead, push them out in line with your toes.</li>
+            <li>Engage your glutes and core muscles to stabilize your pelvis and maintain balance.</li>
+            <li>Start with bodyweight squats or use a support (like a chair or wall) if you're new to the exercise.</li>
+            <li>Gradually increase the depth and resistance as you become more proficient and build strength.</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+<!--  JS  -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+{% endblock %}

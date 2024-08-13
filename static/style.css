@@ -1,0 +1,52 @@
+.lista{
+    font-size: 22px;
+}
+
+.DaniPT{
+    font-size: 55px;
+}
+
+.foto_aboutme{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 480px;
+    object-fit: cover; /* This will ensure the image is resized proportionally */
+    width: 400px;
+}
+
+.black-line {
+    background-color: black;
+    height: 60px;
+  }
+
+  .titolo2{
+    font-size:38px;
+    text-align:center;
+  }
+
+.center{
+    text-align:center;
+}
+
+.card-text{
+    font-size:20px;
+}
+
+.giustifica{
+    text-align:justify;
+}
+
+/*chatGPT*/
+.effetto-ombra{
+    transform: scale(1.05); /* Ingrandisce la card */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Aggiunge un'ombra */
+    transition: transform 0.3s, box-shadow 0.3s; /* Effetto di transizione fluida */
+
+}
+
+input[type="date"] {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+}

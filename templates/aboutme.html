@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{%block head%}
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- emoji -->
+<link href="{{ url_for('static', filename='images/danipt.jpg') }}" rel="icon">
+
+<!-- CSS -->
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+{%endblock%}
+
+{% block title %}
+    About me
+{% endblock %}
+
+{% block main %}
+
+<div class="container p-5 my-4 bg-light text-dark tema">
+    <h2>Meet Dani PT</h2>
+    <p style="text-align: justify;" class="lead">With an innate sense of beauty and a fervent passion for luxury, design, and economics, I'm
+        currently pursuing a Master's degree at University. From analyzing fashion trends to
+        orchestrating memorable events, I embody creativity and dedication in every endeavor. Driven by
+        my pursuit of physical and mental excellence, I'm an aspiring personal trainer, balancing academia
+        with my passion for fitness. Staying ahead of the curve with a keen sense of style and trend
+        analysis, I live and breathe fashion, infusing every aspect of my life with aesthetic flair.</p>
+</div>
+
+<!--Bootstrap carousel-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ url_for('static', filename='images/horse2.jpg') }}" class="d-block w-100 foto_aboutme" alt="horse">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ url_for('static', filename='images/montagna.jpg') }}"  class="d-block w-100 foto_aboutme" alt="ski">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ url_for('static', filename='images/barbell.jpg') }}"  class="d-block w-100 foto_aboutme" alt="barbell">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+<!--interessi e amore per lo sport-->
+<div class="container p-5 my-4 bg-light text-dark tema">
+    <h2>Interests and Passions</h2>
+    <p style="text-align: justify;" class="lead">Since childhood, sports have been an integral part of my life. In addition to my passion for fitness and personal training, I have a deep love for sports in general. I find joy and fulfillment in exploring a wide range of physical and adventurous activities.</p>
+    <h3>Love for Physical Activity</h3>
+    <p style="text-align: justify;" class="lead">I am excited by the idea of pushing my limits and trying new challenges. The variety of sports fascinates me, and I enjoy experimenting with a wide range of disciplines to keep myself fit and vibrant. From bodybuilding to crossfit, from horse-riding to skiing, I have always sought to expand my repertoire of physical skills.</p>
+    <h3>The Thrill of Horseback Riding</h3>
+    <p style="text-align: justify;" class="lead">However, among all the activities I engage in, my deepest love is for horseback riding. Since a young age, I have spent hours in the saddle, exploring trails, jumping obstacles, and participating in competitions. Riding allows me to connect with nature, to feel the power and grace of my equine companions, and to experience a sense of freedom and adventure that cannot be replicated elsewhere.</p>
+</div>
+
+
+<!--  JS  -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+{% endblock  %}
