@@ -1,5 +1,8 @@
 # DANI PT
+<img src="static/images/danipt.jpg" width=100>
+
 #### Video Demo:  <https://www.youtube.com/watch?v=n4m9AW05ULs>
+
 #### Description:
 DANI PT is a personal web application designed to streamline and enhance the experience of gym training with the support of Dani, a personal trainer. The platform serves clients by providing an intuitive interface for managing schedules and facilitating communication with the trainer.
 
