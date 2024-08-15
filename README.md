@@ -1,5 +1,8 @@
 # DANI PT
+
 <img src="static/images/danipt.jpg" width=100>
+
+DANI PT is the final project for my CS50x course (https://cs50.harvard.edu/x/2024/), developed as a comprehensive web application to enhance the personal training experience.
 
 #### Video Demo:  <https://www.youtube.com/watch?v=n4m9AW05ULs>
 
